@@ -20,9 +20,9 @@ python3 -m http.server 8080
 ## 文档覆盖范围
 
 - 快速上手：环境搭建、Git LFS、编译、烧录、分区和 OTA。
-- 架构说明：PDK 目录结构、运行时分层、启动链路。
+- 架构说明：PDK 目录结构、运行时分层、启动链路、产品应用交互流程。
 - 接口开发：PDK 消息总线、Scan 消息域、`scan_server` API、`pdk_invoke`。
-- 产品能力：LVGL/AuraUI UI 接入、RTC 定时闹钟、经典蓝牙耳机、USB CDC 校准、摄像头帧接口。
+- 产品能力：LVGL/AuraUI UI 接入、当前扫描笔 UI 界面、界面交互流程、UI 二次开发建议、RTC 定时闹钟、经典蓝牙耳机、USB CDC 校准、摄像头帧接口。
 - 调试排障：构建烧录命令、Shell 调试、源码索引。
 
 ## 版本更新摘要
@@ -38,5 +38,5 @@ python3 -m http.server 8080
 ## 维护说明
 
 - 如果 `apps/scanpen/res/partitions.yaml` 调整，需同步更新文档中的分区表、烧录地址和 OTA 说明。
-- 如果 `apps/scanpen/prj.conf` 或蓝牙、RTC、UI 启动链路变更，需同步更新对应章节。
+- 如果 `apps/scanpen/prj.conf` 或蓝牙、RTC、UI 启动链路、产品交互流程、页面列表变更，需同步更新对应章节。
 - 修改 `index.html` 后建议检查左侧目录锚点和页面渲染。
